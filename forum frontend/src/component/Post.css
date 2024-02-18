@@ -1,0 +1,95 @@
+#main {
+    min-height: 120px;
+    height: 100px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    background-color: #ffffffaf;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;    transition-duration: 1s;
+}
+
+#main:hover{
+    translate: 2px;
+    transition-duration: 1s;
+}
+
+#profile__picture {
+    width: 50px;
+    height: 50px;
+    margin:20px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+}
+
+#profile__picture img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+#posts{
+    display: flex;
+    width: 90%;
+}
+
+#post__title{
+    width: 90%;
+}
+
+
+#posts #post__title p:first-child{
+    font-weight: 500;
+}
+
+#posts #post__title p:nth-child(2){
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(98, 90, 90);
+}
+
+#posts :last-child{
+    align-items: end;
+}
+
+#message__view__time__icon{
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+#message__icon {
+    text-align: center;
+    margin: auto;
+    /* padding-right: 12px; */
+}
+
+#views__icon {
+    text-align: center;
+    margin: auto;
+    /* padding-right: 12px; */
+}
+
+#eye__icon {
+    text-align: center;
+    margin: auto;
+    /* padding-right: 12px; */
+}
+
+#eye__icon__box{
+    display: flex;
+    align-self: center;
+}
+
+@media (min-width:500px) {
+    #post__title >p:first-child{
+        padding-top: 10px;
+    }
+}
